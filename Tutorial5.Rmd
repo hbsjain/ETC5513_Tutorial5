@@ -11,3 +11,21 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # This is tutorial 5
 
+
+#  Libraries
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+
+```
+
+
+# Examining the relationship between bill length and flipper length.
+
+```{r}
+library(palmerpenguins)
+data(package = 'palmerpenguins')
+ggplot(penguins, aes(x = bill_depth_mm , y = flipper_length_mm, color = species)) +
+geom_point()
+
+```
